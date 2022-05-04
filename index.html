@@ -1,0 +1,433 @@
+<!-- Design a shopping website using CSS that provides information about various products to the visitor. A visitor can register to the shopping website -->
+<!-- if he wishes to purchase some item(s) now or in future. The registration form should collect necessary information of a visitor in order to deliver the -->
+<!-- product if order placed. Moreover, design a web page to place orders by the registered user. Validate all the fields of the registration form and order form. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop Now</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo"><img src="img/logo.png" alt="logo" style="width:140px;"></div>
+    <ul class="navbar-menu">
+        <li class="navbar-item"><a class="navbar-link"  onclick="Btn1();"> Home</a></li>
+        <li class="navbar-item"><a class="navbar-link"  onclick="Btn2();">About</a></li>
+        <li class="navbar-item"><a class="navbar-link"  onclick="Btn3();">Checkout</a></li>
+        <li class="navbar-item"><a class="navbar-link"  onclick="Btn4();">Login</a></li>
+        <li class="navbar-item"><a class="navbar-link"  onclick="Btn5();">Register</a></li>
+        <li class="navbar-item"><a class="navbar-link" ><i class="fas fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+</nav>
+
+
+
+<!-- HOME -->
+<div id="content1">
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've been making Clothes for last 10 years</h2>
+                <p>You can have anything you want in life if you dress for it.</p>
+    
+            </div>
+            <div class="about-img">
+                <img src="./img/building-image.jpg" alt="About Us">
+            </div>
+        </div>
+    
+    </section>
+    <section class="products">
+        <h2>Out Products</h2>
+        <div class="container">
+            <div class="card">
+                <img src="img/img2.webp" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img1.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img2.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img3.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img4.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="img/img11.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img5.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img6.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img7.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img8.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="img/img9.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+            <div class="card">
+                <img src="img/img10.jpg" alt="img">
+                <h3>Light blue T-Shirt</h3>
+                <div class="ratings">
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star"></i>
+                    <i class="fas fa-solid fa-star-half"></i>
+                </div>
+                <p>&#8377; 500.00</p>
+                <button class="btn">Add <i class="fas fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>    
+</div>
+
+<!-- ABOUT -->
+<div id="content2">
+
+</div>
+
+<!-- Checkout -->
+<div id="content3">
+
+    <div class="container">
+        <h2>Checkout</h2>
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form>
+      
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="vaibhav paliwal">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="vaibhav@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="A-1302 Pinecrest">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="Ahmedabad">
+      
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="AH">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="32001">
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="vaibhav paliwal">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="9999-9999-9999-9999">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="Febuary">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2025">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="999">
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Pay" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="container">
+              <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+              <hr>
+              <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="forms" id="">
+
+<!-- login -->
+<div id="content4">
+    <form>
+        <div id="window">
+            <h1> Login </h1>
+            <br>
+            <div class="data">
+                <label for="username">
+                    <br>
+                    <input id="username" type="text" name="" placeholder="username">
+                    <small id="username_error"></small>
+                </label>
+
+                <label for="password">
+                    <br>
+                    <input type="password" id="password" placeholder="password">
+                    <small id="password_error"></small>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="LoginBtn" type="submit" onclick="event.preventDefault(); login_check();"> Login </button>
+                    <br>
+                    <br>
+                    <div style="text-align: right;">
+                        <a href="#"><small> password forgotten? </small></a>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Register -->
+<div id="content5">
+    <form>
+        <div id="window">
+            <h1> Register </h1>
+            <br>
+            <div class="data">
+                <label for="name">
+                    <br>
+                    <input id="name" type="text" name="name" placeholder="full Name">
+                    <small id="name_error"></small>
+                </label>
+                <label for="username">
+                    <br>
+                    <input id="username" type="text" name="username" placeholder="username">
+                    <small id="username_error"></small>
+                </label>
+                <label for="email">
+                    <br>
+                    <input id="email" type="email" name="name" placeholder="email address">
+                    <small id="email_error"></small>
+                </label>
+                <br>
+
+                <label for="password">
+                    <input id="password" type="password" placeholder="password">
+                    <small id="password_error"></small>
+                    <br>
+                    <input id="cpassword" type="password" placeholder="confirm password">
+                    <small id="cpassword_error"></small>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="LoginBtn" type="submit" onclick="event.preventDefault(); registration_check();"> Register </button>
+                    <br>
+                    <br>
+                    <br>
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container2">
+                <div class="col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div style="margin-top: 20px;">
+                        <img class="app-logo" src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="">
+                        <img class="app-logo" src="https://i.ibb.co/hVM4X2p/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="logo" src="img/logo.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Clothes Accessible to the Many.</p>
+                </div>
+                <div class="col-3">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                        <li>reddit</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <center>Copyright &copy; 2021 - Careena</center>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="https://kit.fontawesome.com/855e229fa7.js" crossorigin="anonymous"></script>
+</body>
+</html>
