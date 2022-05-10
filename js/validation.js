@@ -17,7 +17,7 @@ function login_check(){
         username = document.getElementById("username").value
         password = document.getElementById("password").value
         console.log("Login Credentials Checking")
-        if(username == "devsanger" && password == 'Passw0rd!')
+        if(username == "vaibhav" && password == 'Passw0rd!')
             location.replace('http://127.0.0.1:5500/practical_10/index.html');
     }
 }
